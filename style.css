@@ -1,0 +1,99 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.parent {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.parent h1 {
+  margin-bottom: 20px;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+
+.container {
+  background-color: black;
+  border-radius: 10px;
+  width: 120px;
+  height: 200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.red,
+.yellow,
+.green {
+  margin: auto;
+  height: 50px;
+  width: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+}
+
+.red {
+  background-color: red;
+}
+
+.yellow {
+  background-color: yellow;
+}
+
+.green {
+  background-color: green;
+}
+
+.stop,
+.ready,
+.go {
+  margin: auto;
+  height: 50px;
+  width: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+}
+
+.stop {
+  background-color: gray;
+}
+
+.ready {
+  background-color: gray;
+}
+
+.go {
+  background-color: gray;
+}
+
+.parent .btns {
+  border-radius: 10px;
+  /* width: 120px; */
+  height: 200px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.btns button {
+  margin: 5px;
+  width: 80px;
+  height: 40px;
+}
