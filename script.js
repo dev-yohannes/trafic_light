@@ -38,13 +38,9 @@ stop_btn.addEventListener("click", function () {
 
   // removing yellow light
   removingYellow();
-  // ready.classList.remove("yellow");
-  // ready.classList.add("ready");
 
   // removing green light
   removingGreen();
-  // go.classList.remove("green");
-  // go.classList.add("go");
 });
 
 // yellow light
@@ -54,13 +50,9 @@ ready_btn.addEventListener("click", function () {
 
   // removing red light
   removingRed();
-  // stop.classList.remove("red");
-  // stop.classList.add("stop");
 
   // removing green light
   removingGreen();
-  // go.classList.remove("green");
-  // go.classList.add("go");
 });
 
 // red light
@@ -70,13 +62,9 @@ go_btn.addEventListener("click", function () {
 
   // removing red light
   removingRed();
-  // stop.classList.remove("red");
-  // stop.classList.add("stop");
 
   // removing yellow light
   removingYellow();
-  // ready.classList.remove("yellow");
-  // ready.classList.add("ready");
 });
 
 // off button
