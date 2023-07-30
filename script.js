@@ -9,6 +9,26 @@ var ready_btn = document.querySelector(".ready-btn");
 var go_btn = document.querySelector(".go-btn");
 var off_btn = document.querySelector(".off-btn");
 
+// functions
+
+// removing yellow
+function removingYellow() {
+  ready.classList.remove("yellow");
+  ready.classList.add("ready");
+}
+
+// removing green
+function removingGreen() {
+  go.classList.remove("green");
+  go.classList.add("go");
+}
+
+// removing red
+function removingRed() {
+  stop.classList.remove("red");
+  stop.classList.add("stop");
+}
+
 // changing the lights
 
 // red light
@@ -17,12 +37,14 @@ stop_btn.addEventListener("click", function () {
   stop.classList.add("red");
 
   // removing yellow light
-  ready.classList.remove("yellow");
-  ready.classList.add("ready");
+  removingYellow();
+  // ready.classList.remove("yellow");
+  // ready.classList.add("ready");
 
   // removing green light
-  go.classList.remove("green");
-  go.classList.add("go");
+  removingGreen();
+  // go.classList.remove("green");
+  // go.classList.add("go");
 });
 
 // yellow light
@@ -31,12 +53,14 @@ ready_btn.addEventListener("click", function () {
   ready.classList.add("yellow");
 
   // removing red light
-  stop.classList.remove("red");
-  stop.classList.add("stop");
+  removingRed();
+  // stop.classList.remove("red");
+  // stop.classList.add("stop");
 
   // removing green light
-  go.classList.remove("green");
-  go.classList.add("go");
+  removingGreen();
+  // go.classList.remove("green");
+  // go.classList.add("go");
 });
 
 // red light
@@ -45,12 +69,14 @@ go_btn.addEventListener("click", function () {
   go.classList.add("green");
 
   // removing red light
-  stop.classList.remove("red");
-  stop.classList.add("stop");
+  removingRed();
+  // stop.classList.remove("red");
+  // stop.classList.add("stop");
 
   // removing yellow light
-  ready.classList.remove("yellow");
-  ready.classList.add("ready");
+  removingYellow();
+  // ready.classList.remove("yellow");
+  // ready.classList.add("ready");
 });
 
 // off button
