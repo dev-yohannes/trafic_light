@@ -69,12 +69,9 @@ go_btn.addEventListener("click", function () {
 
 // off button
 off_btn.addEventListener("click", function () {
-  stop.classList.remove("red");
-  stop.classList.add("stop");
+  removingRed();
 
-  ready.classList.remove("yellow");
-  ready.classList.add("ready");
+  removingYellow();
 
-  go.classList.remove("green");
-  go.classList.add("go");
+  removingGreen();
 });
